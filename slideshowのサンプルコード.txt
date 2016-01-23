@@ -1,0 +1,58 @@
+﻿www.miyagi-furusatowari.jp
+
+//slideshowのサンプルコード
+
+<link rel="stylesheet" href="cmn/bxslider/jquery.bxslider.css" type="text/css" media="all" />
+
+<script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="cmn/bxslider/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  obj = $('.slide_body').bxSlider({
+	mode: 'horizontal',
+    auto: true,
+	pager:false,
+	speed:2000,
+    pause: 4000,
+	slideWidth:980,
+	minSlides:3,
+	maxSlides:3,
+	moveSlides:1,
+	touchEnabled:true
+});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.slide_body02').bxSlider({
+    mode: 'fade',
+    auto: true,
+	pager:false,
+	speed:2000,
+    pause: 4000,
+	controls:false
+  });
+});
+</script>
+
+
+
+
+
+<!-- main slider -->
+<!--<p class="center"><a href="episode/01/index.html"><img style="max-width:980px; width:100%;" src="img/img_slider02.jpg" alt=""></a></p>-->
+<div id="mainBanner">
+	<div class="slide_all">
+		<div class="slide_body">
+			<a href="episode/02/index.html"><img id="img03" src="img/img_slider03.jpg" alt="第2話　米粉麺の概念をくつがえす、みやぎあおばう米麺" /></a>
+			<a href="episode/prologue/index.html"><img id="img01" src="img/img_slider01.jpg" alt="第0話　みやぎの、ふるさとものがたり" /></a>
+			<a href="episode/01/index.html"><img id="img02" src="img/img_slider02.jpg" alt="第1話　生産量日本一を誇る、宮城のホヤ。" /></a>
+		</div>
+	</div>
+</div>
+<div class="slide_body02">
+	<div><a href="episode/02/index.html"><img id="img03" src="img/img_slider03.jpg" alt="第2話　米粉麺の概念をくつがえす、みやぎあおばう米麺" /></a></div>
+	<div><a href="episode/01/index.html"><img id="img01" src="img/img_slider01.jpg" alt="第0話　みやぎの、ふるさとものがたり" /></a></div>
+	<div><a href="episode/prologue/index.html"><img id="img02" src="img/img_slider02.jpg" alt="第1話　生産量日本一を誇る、宮城のホヤ。" /></a></div>
+</div>
